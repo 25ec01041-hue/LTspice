@@ -1,0 +1,10 @@
+*
+.include 65nm_bulk_organized.pm
+
+M1 d g 0 0 nmos L=65n W=1u ; drain gate source body model size
+Vd d 0 50m
+Vg g 0 0
+.dc Vg 0 1.1 1m ; sweep Vg from 0 to 1.1 V in 1 mV steps
+.meas DC Ion FIND Id(M1) AT 1.1
+.op
+.end

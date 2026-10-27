@@ -1,0 +1,15 @@
+LTspice 26.0.2 for Windows
+Circuit: D:\EDA_LTSPICE\Q2
+Start Time: Mon Oct 26 16:26:23 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Total elapsed time: 0.111 seconds.
+
+Files loaded:
+D:\EDA_LTSPICE\Q2
+D:\EDA_LTSPICE\65nm_bulk_organized.pm
+
+ion: Id(M1) =0.00019390496891 at 1.1

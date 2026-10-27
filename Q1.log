@@ -1,0 +1,17 @@
+LTspice 26.0.2 for Windows
+Circuit: D:\EDA_LTSPICE\Q1.cir
+Start Time: Mon Oct 26 16:14:30 2026
+Options:ALLOW_AMBIGUOUS_MODELS
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.431 seconds.
+
+Files loaded:
+D:\EDA_LTSPICE\Q1.cir
+C:\Users\kushw\AppData\Local\LTspice\lib\cmp\standard.mos
+D:\EDA_LTSPICE\65nm_bulk_organized.pm
+

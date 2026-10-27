@@ -1,0 +1,15 @@
+* CMOS Inverter DC Transfer Characteristic (VTC)
+* Course: EC2L104 - Introduction to EDA Tools
+
+* 1. Define model parameters referenced in the PTM file (e.g., RDSW)
+.param RDSW=165
+
+* 2. Include the PTM Model Card
+.include 65nm_bulk_organized.pm
+
+M1 d g 0 0 nmos L=65n W = 1u;
+Vd d 0 0.4
+vg g 0 0
+.dc Vg 0 1.1 1m;
+.op
+.end

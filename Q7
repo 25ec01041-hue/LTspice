@@ -1,0 +1,20 @@
+* CMOS Inverter DC Transfer Characteristic (VTC)
+* Course: EC2L104 - Introduction to EDA Tools
+
+* Define model parameters and include the model file
+.param RDSW=165
+.include 65nm_bulk_organized.pm
+
+* Power Supplies & Input Definition
+VDD VDD 0 DC 1.1V
+VIN VIN 0 DC 0V
+
+* Transistor Instances (Matching S7 Table Specifications)
+* Syntax: M<name> <drain> <gate> <source> <bulk> <model> L=<val> W=<val>
+Mp VOUT VIN VDD VDD pmos L=65n W=2u
+Mn VOUT VIN 0   0   nmos L=65n W=1u
+
+* DC Analysis: Sweep input voltage from 0 to 1.1V in 1mV increments
+.dc VIN 0 1.1 0.001
+
+.end

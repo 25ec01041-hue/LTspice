@@ -1,0 +1,11 @@
+* Experiment 2: output characteristic
+.include 65nm_bulk_organized.pm
+
+.param VGS=0.6
+M1 d g 0 0 nmos L=65n W=1u
+Vd d 0 0
+Vg g 0 {VGS}
+.dc Vd 0 1.1 1m
+.step param VGS list 0.3 0.6 0.9 1.5 ; the gate voltages of TCAD Exercise E6
+.op
+.end
